@@ -74,10 +74,20 @@ A REST API that processes input arrays and returns categorized data including nu
 
 ## Testing
 
-Use curl or Postman to test:
+### Local Testing
+Use curl or Postman to test locally:
 
 ```bash
 curl -X POST http://localhost:3000/bfhl \
+  -H "Content-Type: application/json" \
+  -d '{"data": ["M","1","334","4","B","Z","a","@","#"]}'
+```
+
+### Vercel Testing
+For Vercel deployment, the endpoint will be:
+
+```bash
+curl -X POST https://your-vercel-url/api/bfhl \
   -H "Content-Type: application/json" \
   -d '{"data": ["M","1","334","4","B","Z","a","@","#"]}'
 ```
