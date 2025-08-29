@@ -10,10 +10,10 @@ app.use(express.json());
 
 // User information - replace with your actual details
 const USER_INFO = {
-    full_name: "john_doe", // Replace with your actual name in lowercase
-    birth_date: "17091999", // Replace with your birth date (ddmmyyyy)
-    email: "john@xyz.com", // Replace with your email
-    roll_number: "ABCD123" // Replace with your roll number
+    full_name: "sai_kiran_t_v", // Must be lowercase with underscores
+    birth_date: "22112002", 
+    email: "saikiran.tv2022@vitstudent.ac.in", 
+    roll_number: "22BPS1172" 
 };
 
 // Helper function to process array data
